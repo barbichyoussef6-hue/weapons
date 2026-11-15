@@ -7,14 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '21'
           cache: maven
       - run: mvn -B package
+        working-directory: LegendaryWeapons-Projekt
       - uses: actions/upload-artifact@v4
         with:
           name: LegendaryWeapons
-          path: target/LegendaryWeapons.jar
-          
+          path: LegendaryWeapons-Projekt/target/LegendaryWeapons.jar
+        
