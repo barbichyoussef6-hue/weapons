@@ -1,0 +1,18 @@
+JAR OHNE INSTALLATION BAUEN (GitHub)
+
+1. Auf github.com kostenlos registrieren und oben rechts "New repository" klicken (Name: LegendaryWeapons, Public oder Private).
+2. Auf der leeren Repo-Seite "uploading an existing file" klicken.
+3. Den KOMPLETTEN Inhalt dieses Ordners hineinziehen (pom.xml, src, .github) und "Commit changes" klicken.
+   Wichtig: der Ordner ".github" muss mit hochgeladen werden, sonst startet der Build nicht.
+4. Oben auf den Reiter "Actions" gehen. Dort laeuft "Plugin bauen" (ca. 1-2 Minuten).
+5. Wenn der Haken gruen ist: auf den Lauf klicken, unten bei "Artifacts" LegendaryWeapons herunterladen.
+6. Die heruntergeladene ZIP entpacken -> darin liegt LegendaryWeapons.jar.
+7. LegendaryWeapons.jar in den Ordner plugins/ deines Servers legen und den Server komplett neu starten (nicht /reload).
+
+IM SPIEL
+- /legendary  oder  /lw  oeffnet das Waffen-Menue (nur OP oder Creative-Modus).
+- Auf eine Waffe klicken = du bekommst sie.
+- /legendary list zeigt, welche Waffen schon gecraftet wurden.
+
+Wenn der Build rot ist: Fehlertext aus dem Reiter Actions kopieren und mir schicken.
+Wenn der Server die jar nicht laedt: die Datei logs/latest.log schicken.

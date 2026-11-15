@@ -1,0 +1,14 @@
+name: LegendaryWeapons
+version: 1.0.0
+main: de.legendary.LegendaryWeapons
+api-version: '1.21'
+description: 7 legendäre Waffen, jede nur einmal pro Server craftbar
+commands:
+  legendary:
+    description: Verwaltung der legendären Waffen
+    usage: /legendary <menu|list|recipe|give|reset>
+    aliases: [lw]
+permissions:
+  legendary.admin:
+    description: Waffen geben und Crafting-Sperre zurücksetzen
+    default: op
